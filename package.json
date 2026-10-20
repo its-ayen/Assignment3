@@ -1,0 +1,23 @@
+{
+  "name": "inm320-assign3-css-precompiler",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "lite-server --baseDir=\"public\"",
+    "watch": "sass --watch src/scss/style.scss public/assets/css/style.css",
+    "start": "concurrently \"npm run watch\" \"npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.5",
+    "live-server": "^1.2.2",
+    "sass": "^1.105.2"
+  },
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "private",
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "save-dev": "^0.0.1-security"
+  }
+}
